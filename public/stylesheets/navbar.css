@@ -1,0 +1,150 @@
+
+* {
+    margin: auto;
+    padding: -10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  body {
+    background: #f6f6f6;
+  }
+
+  * a {
+    text-decoration: none;
+    color: #151515;
+  }
+
+  .pinterest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.938rem;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  .left .logo {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left .logo:hover {
+    background-color: #e5e5e5;
+  }
+  .left .logo i {
+    color: #e60022;
+    font-size: 24px;
+  }
+  .left .home {
+    font-weight: bold;
+    height: 3rem;
+    color: #fff;
+    padding: 1rem;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.563rem;
+    margin: 0 10%;
+  }
+  .avatara{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar .img {
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .avatar .img img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .search {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #e3e3e3;
+    margin: 0 5%;
+  }
+  .search:hover {
+    background: #c9c9c9;
+  }
+  .search i {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #767676;
+  }
+  .search input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding-right: 1rem;
+  }
+  .search input::placeholder {
+    color: #767676;
+    font-size: 1rem;
+  }
+  .right {
+    width: 400px;
+    padding: auto;
+    display: flex;
+    align-items: center;
+  }
+  .items {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .items:hover {
+    background: #e5e5e5;
+  }
+  .items i {
+    font-size: 1rem;
+    color: #767676;
+  }
+  #salir {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  #salir i {
+    align-items: center;
+    margin: 10px 10px;
+    font-size: 22.25px;
+  }
+  
+  #salir{
+    background: #e5e5e5;
+  }
+  

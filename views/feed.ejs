@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/feed.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>    
+        <div class="pinterest">
+          <div class="left">
+            <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+          </div>
+          <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="search" name="" placeholder="Search" id="">
+          </div>
+          <div class="right">
+            <a href="/profile" class="avatar">
+              <div class="img"><img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt=""></div>
+            </a>
+            <a href="/login" id="salir"><i class="fas fa-sign-out-alt"></i></a>
+          </div>
+        </div>
+   </nav>
+ 
+
+<div class="container">
+     
+    <div class="gallery">
+        <% posts.forEach(post => { %>
+            <div class="box">
+                <a href="<%= post.image %>">
+                    <img src="<%= post.image %>" alt="image">
+                </a>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> <%= post.likes.length %></li>
+                        <!-- Agregar más detalles del post si es necesario -->
+                    </ul>
+                </div>
+                <div class="caption"><%= post.imageText %></div>
+            </div>
+        <% }); %>
+    </div>
+     
+ <div class="box">
+               <a href="ttps://oriontralelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg" >
+               <img src="https://oriontravelblog.com/wp-content/uploads/2019/08/IMG_6310.jpg" alt="image"></a>
+               <div class="gallery-item-info">
+                <ul>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                </ul>
+            </div>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+
+<div class="box">
+               <a href="https://sciencecalx.com/wp-content/uploads/2023/07/chemistry.png" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2021/08/newStopCropped1.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/003.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/002.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/001.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/006.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/007.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/008.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/009-scaled.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/010.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/011.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/012.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/013.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/014.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/015.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/016.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/021.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+      
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/019.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/020.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/022.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/023.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/024.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/025.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/026.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/027.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/028.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div> 
+     
+<div class="box">
+               <a href="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg" >
+               <img src="https://orionstardesign.com/wp-content/uploads/2023/08/029.jpg" alt="image"></a>
+           <div class="caption">Lorem ipsum </div>
+ </div>
+
+</div>
+   
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="app.js"></script>
+</body>
+                 
+
+</html>

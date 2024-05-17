@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+<header>
+
+	<div class="container">
+		<div class="profile">
+			<div class="profile-image">
+				<% if (user.profileImage) { %>
+					<img class="ProfileImg" src="/images/uploads/<%= user.profileImage %>" alt="Foto de perfil">
+				<% } else { %>
+					<p>No hay foto de perfil</p>
+				<% } %>
+			</div>
+
+            <div class="container">
+                <a href="/feed" class="btn profile-edit-btn">Home</a>
+                <button class="btn profile-edit-btn">Edit Profile</button>
+                <a href="/login" class="btn profile-edit-btn">Exit</a>
+				<!-- Formulario para subir la imagen de perfil -->
+			<form action="/uploadprofile" method="post" enctype="multipart/form-data">
+				<input type="file" name="file">
+				<button type="submit">Subir Foto de Perfil</button>
+			</form>
+            </div>
+
+			<div class="profile-user-settings">
+				<h1 class="profile-user-name">@<%= user.username %></h1> <br>
+				<p class="profile-user-name"><%= user.fullname %></p>
+			</div>
+				
+
+			<div class="profile-bio">
+				<p><span class="profile-real-name"></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️</p>
+			</div>
+			
+			<div class="profile-upload">
+			<form action="/upload" method="post" enctype="multipart/form-data">
+				<input type="text" name="filecaption" placeholder="some caption">
+				<input type="file" name="file">
+				<button type="submit">upload</button>
+				</form>
+			</div>
+
+		</div>
+		<!-- End of profile section -->
+	</div>
+	<!-- End of container -->
+
+</header>
+
+<main>
+	<div class="container">
+		<div class="gallery">
+
+			<% user.posts.forEach(function(post) { %>
+			<div class="gallery-item" tabindex="0">	
+				<img src="/images/uploads/<%= post.image %>" 
+					class="gallery-image" alt="">
+				<div class="gallery-item-info">
+					<ul>
+						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+						<div class="card-body">
+							<h3 class="card-title"><%= post.imageText %></h3>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<% }) %>
+		</div>
+		<!-- End of gallery -->
+		<div class="loader"></div>
+	</div>
+	<!-- End of container -->
+</main>
+</html>
